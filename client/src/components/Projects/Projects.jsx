@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './Projects.css'
 
 const ALL_TAGS = ['all', 'react', 'node', 'mongodb', 'express', 'rest-api', 'unreal-engine', 'game-dev']
+const API_URL = import.meta.env.VITE_API_URL || ''
 
 function Projects() {
   const [projects, setProjects] = useState([])
@@ -18,8 +19,8 @@ function Projects() {
     setError(null)
     try {
       const url = tag === 'all'
-        ? '/api/projects'
-        : `/api/projects?tag=${tag}`
+      ? `${API_URL}/api/projects`
+      : `${API_URL}/api/projects?tag=${tag}`
       const response = await fetch(url)
       if (!response.ok) {
         throw new Error('Failed to fetch projects')
