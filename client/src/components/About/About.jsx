@@ -27,7 +27,7 @@ function About() {
             <div className="about-details">
               <div className="about-detail">
                 <span className="detail-label">Location</span>
-                <span className="detail-value">Pokhara, Nepal</span>
+                <span className="detail-value">Kathmandu, Nepal</span>
               </div>
               <div className="about-detail">
                 <span className="detail-label">Email</span>
