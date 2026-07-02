@@ -1,10 +1,15 @@
 import express from 'express';
+import cors from 'cors';
 import pool from './db.js';
 import projectsRouter from './routes/projects.js';
 import messagesRouter from './routes/messages.js';
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
+app.use(cors({
+  origin: process.env.CLIENT_URL || 'http://localhost:5173'
+}));
 
 app.use(express.json());
 
