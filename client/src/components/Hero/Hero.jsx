@@ -7,7 +7,7 @@ function Hero() {
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Samundra Subedi</h1>
         <p className="hero-tagline">
-          Full-Stack Developer building real products with the MERN stack —
+          Full-Stack Developer building real products with the PERN/MERN stack —
           and occasionally a 3D action game in Unreal Engine.
         </p>
         <div className="hero-buttons">
