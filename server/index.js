@@ -1,8 +1,11 @@
 import express from "express";
 import pool from "./db.js";
+import projectsRouter from "./routes/projects.js";
 
 const app = express();
 const PORT = 5000;
+
+app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("Server is running");
@@ -17,6 +20,8 @@ app.get("/test-db", async (req, res) => {
         res.status(500).send('Database connection failed');
     }
 });
+
+app.use("/api/projects", projectsRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running on: http://localhost:${PORT}`);
