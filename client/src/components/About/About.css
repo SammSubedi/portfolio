@@ -91,3 +91,16 @@
 .detail-value a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-image {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+  }
+}

@@ -113,3 +113,18 @@
 .status-message.error {
   color: #e74c3c;
 }
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tag-filters {
+    gap: 0.5rem;
+  }
+
+  .tag-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.75rem;
+  }
+}
