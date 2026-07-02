@@ -1,13 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState, useEffect } from 'react'
+import Navbar from './components/Navbar/Navbar'
 import './App.css'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false)
+
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      'data-theme',
+      darkMode ? 'dark' : 'light'
+    )
+  }, [darkMode])
+
+  const toggleDarkMode = () => {
+    setDarkMode(prev => !prev)
+  }
+
   return (
     <div className="app">
-      <h1>Portfolio coming soon</h1>
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <main style={{ paddingTop: '60px' }}>
+        <h1>Portfolio coming soon</h1>
+      </main>
     </div>
   )
 }
