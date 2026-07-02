@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
 import './App.css'
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
   return (
     <div className="app">
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main style={{ paddingTop: '60px' }}>
-        <h1>Portfolio coming soon</h1>
+      <main>
+        <Hero />
       </main>
     </div>
   )
