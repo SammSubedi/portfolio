@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:5173',
   'https://sammsubedi.vercel.app',
-  'https://sammsubedi.com.np',
-  'https://www.sammsubedi.com.np',
+  'https://subedisamundra.com.np',
+  'https://www.subedisamundra.com.np',
 ]
 
 app.use(cors({
