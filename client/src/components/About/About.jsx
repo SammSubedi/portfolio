@@ -31,7 +31,7 @@ function About() {
               </div>
               <div className="about-detail">
                 <span className="detail-label">Email</span>
-                <span className="detail-value">sank.subedi@gmail.com</span>
+                <span className="detail-value">its.samundra@gmail.com</span>
               </div>
               <div className="about-detail">
                 <span className="detail-label">GitHub</span>

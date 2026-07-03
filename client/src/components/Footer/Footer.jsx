@@ -19,7 +19,7 @@ function Footer() {
           >
             GitHub
           </a>
-          <a  href="https://mail.google.com/mail/?view=cm&to=sank.subedi@gmail.com"
+          <a  href="https://mail.google.com/mail/?view=cm&to=its.samundra@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
