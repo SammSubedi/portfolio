@@ -3,6 +3,11 @@ import './Contact.css'
 const API_URL = import.meta.env.VITE_API_URL || ''
 
 
+// validaton Email
+const validateEmail = (email) => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -21,6 +26,12 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    if (!validateEmail(formData.email)) {
+      setStatus({ type: 'error', text: 'Please enter a valid email address.' })
+      return
+    }
+
     setSubmitting(true)
     setStatus(null)
 

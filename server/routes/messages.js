@@ -12,6 +12,13 @@ router.post('/', async (req, res) => {
     });
   }
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({
+      error: 'Please provide a valid email address'
+    });
+  }
+
   try {
     const result = await pool.query(
       `INSERT INTO messages (name, email, message)
