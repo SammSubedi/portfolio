@@ -2,7 +2,7 @@
 
 A full-stack portfolio website built with React, Node.js, Express, and PostgreSQL. Features dynamic project filtering, a contact form that saves to a database, and a dark mode toggle.
 
-**Live site:** https://sammsubedi.vercel.app
+**Live site:** https://subedisamundra.com.np
 
 ---
 
